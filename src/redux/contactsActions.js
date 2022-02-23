@@ -1,8 +1,4 @@
-// import { createAction } from "@reduxjs/toolkit";
 import shortid from 'shortid';
-
-// export const actionFilter = createAction('filter');
-// export const actionContacts = createAction('contacts');
 
 export const addContact = contact => ({
     type: 'phonebook/addContact',

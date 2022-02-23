@@ -1,5 +1,3 @@
-// import { createReducer } from "@reduxjs/toolkit";
-// import { actionContacts } from './contactsActions';
 import { combineReducers } from 'redux';
 import shortid from 'shortid';
 
@@ -30,12 +28,6 @@ export const filterReducer = (state = '', { type, payload }) => {
         default: return state;
     }
 };
-
-// export const filterReducer = createReducer('', {
-//     [actionFilter]: (state, action) => state + action.filter,
-//     [actionContacts]: (state, action) => state + action.filterReset
-//     // ...
-// });
 
 export const rootReducer = combineReducers(
     {
